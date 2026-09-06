@@ -1,0 +1,40 @@
+question,expected_answer,generated_answer,source_found,top_source,top_page,similarity
+What was Apple's total net sales in 2025?,"$416,161 million","In 2025, Apple's total net sales were $416,161 million (or approximately $416.16 billion).
+
+**Source:**
+* `_10-K-2025-As-Filed.pdf`, Page 26",True,_10-K-2025-As-Filed.pdf,26,0.7386287450790405
+What were Apple's iPhone net sales in 2025?,"$209,586 million","In 2025, Apple's iPhone net sales were **$209,586 million** (or approximately $209.59 billion).
+
+**Source:** *_10-K-2025-As-Filed.pdf, Page: 26*",True,10-Q4-2024-As-Filed.pdf,26,0.7674342393875122
+What were Apple's Mac net sales in 2025?,"$33,708 million","In 2025, Apple's Mac net sales were $33,708 million (or approximately $33.71 billion).
+
+**Source:**
+* _10-K-2025-As-Filed.pdf, Page: 26",True,_10-K-2025-As-Filed.pdf,26,0.7104570865631104
+What were Apple's Services net sales in 2025?,"$109,158 million","In 2025, Apple's Services net sales were $109,158 million.
+
+**Source:**
+* _10-K-2025-As-Filed.pdf, Page: 26",True,_10-K-2025-As-Filed.pdf,26,0.7496510744094849
+What was Apple's total net sales in 2024?,"$391,035 million",ERROR,False,,,
+What were Apple's iPhone net sales in 2024?,"$201,183 million","In 2024, Apple's iPhone net sales were $201,183 million (or approximately $201.18 billion).
+
+**Sources:**
+- *10-Q4-2024-As-Filed.pdf*, Page: 26
+- *_10-K-2025-As-Filed.pdf*, Page: 26",True,10-Q4-2024-As-Filed.pdf,26,0.7682307958602905
+What were Apple's Services net sales in 2024?,"$96,169 million","Apple's Services net sales in 2024 were **$96,169 million** (or approximately $96.169 billion).
+
+**Sources:**
+- `10-Q4-2024-As-Filed.pdf`, Page: 26
+- `_10-K-2025-As-Filed.pdf`, Page: 26",True,10-Q4-2024-As-Filed.pdf,26,0.7413634061813354
+What was Apple's total net sales in 2023?,"$383,285 million","Apple's total net sales in 2023 were **$383,285 million** (or approximately $383.29 billion).
+
+**Sources:**
+- `10-Q4-2024-As-Filed.pdf`, Page 26
+- `_10-K-2025-As-Filed.pdf`, Page 26
+- `_10-K-Q4-2023-As-Filed.pdf`, Page 38",True,10-Q4-2024-As-Filed.pdf,26,0.7276691198348999
+What were Apple's iPhone net sales in 2023?,"$200,583 million","Apple's iPhone net sales in 2023 were $200,583 million ($200.583 billion).
+
+**Sources:**
+* `10-Q4-2024-As-Filed.pdf`, Page: 26
+* `_10-K-Q4-2023-As-Filed.pdf`, Page: 38
+* `_10-K-2025-As-Filed.pdf`, Page: 26",True,10-Q4-2024-As-Filed.pdf,26,0.7632284760475159
+What were Apple's Services net sales in 2023?,"$85,200 million",ERROR,False,,,
