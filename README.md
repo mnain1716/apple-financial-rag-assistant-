@@ -61,7 +61,6 @@ The documents are public financial filings and are used for educational and inte
                           ▼
                  ┌──────────────────┐
                  │ Text Extraction  │
-                 └────────┬─────────┘
                           │
                           ▼
                  ┌──────────────────┐
@@ -109,3 +108,40 @@ User Question ────────────┘
 ┌────────────────────────────┐
 │ Answer + Source References │
 └────────────────────────────┘
+```
+
+## Run Locally
+
+Create a `.env` file in the project root:
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+GEMINI_MODEL=gemini-3.6-flash
+```
+
+Install the pinned dependencies and start the app:
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+The committed `vectorstore/faiss.index` and `vectorstore/chunks.pkl` files are required at startup. The embedding model downloads automatically on first run.
+
+## Deploy on Streamlit Community Cloud
+
+1. Push this project to GitHub. Do not commit `.env` or any API key.
+2. Create a new app at [share.streamlit.io](https://share.streamlit.io/).
+3. Select the repository and branch, then set the main file to `app.py`.
+4. In **Advanced settings -> Secrets**, add:
+
+   ```toml
+   GEMINI_API_KEY = "your_gemini_api_key"
+   GEMINI_MODEL = "gemini-3.6-flash"
+   ```
+
+5. Deploy. Streamlit Cloud installs `requirements.txt`, loads the committed vector store, and uses the secret for Gemini requests.
+
+Uploaded PDFs and rebuilt indexes use temporary deployment storage and are not persistent across restarts.
+
+If an API key was ever exposed outside `.env`, revoke it in Google AI Studio and create a replacement before deployment.

@@ -1,10 +1,14 @@
 import faiss
 import numpy as np
 import pickle
+from pathlib import Path
 
 from src.embeddings import create_embeddings
 from src.chunking import create_chunks
 from src.document_loader import load_all_pdfs
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 
 def create_vector_store(chunks):
@@ -30,11 +34,11 @@ def save_vector_store(index, chunks):
 
     faiss.write_index(
         index,
-        "vectorstore/faiss.index"
+        str(PROJECT_ROOT / "vectorstore" / "faiss.index")
     )
 
     with open(
-        "vectorstore/chunks.pkl",
+        PROJECT_ROOT / "vectorstore" / "chunks.pkl",
         "wb"
     ) as file:
 

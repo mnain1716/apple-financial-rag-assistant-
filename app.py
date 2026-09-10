@@ -30,21 +30,21 @@ st.markdown("""
        ======================================================== */
 
     .stApp {
-        background: #0b0f14;
-        color: #e5e7eb;
+        background: #0d0f0e;
+        color: #e7e9e5;
     }
 
     .block-container {
-        max-width: 1250px;
-        padding-top: 2rem;
-        padding-bottom: 3rem;
+        max-width: 1160px;
+        padding-top: 1.4rem;
+        padding-bottom: 2.5rem;
     }
 
     /* Normal Streamlit text */
     .stMarkdown,
     .stCaption,
     label {
-        color: #e5e7eb !important;
+        color: #c5cbc4 !important;
     }
 
 
@@ -53,30 +53,23 @@ st.markdown("""
        ======================================================== */
 
     .hero {
-        padding: 2.2rem 2.4rem;
-        border-radius: 24px;
-        background: linear-gradient(
-            135deg,
-            #05070a 0%,
-            #111827 55%,
-            #1f2937 100%
-        );
-        border: 1px solid #273244;
-        margin-bottom: 1.5rem;
-        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+        padding: 1.1rem 0 1.35rem;
+        border-bottom: 1px solid #2a302c;
+        margin-bottom: 1.1rem;
     }
 
     .hero-title {
-        color: #ffffff;
-        font-size: 2.45rem;
-        font-weight: 750;
-        letter-spacing: -1px;
-        margin-bottom: 0.4rem;
+        color: #f3f4ef;
+        font-family: Georgia, serif;
+        font-size: 2.2rem;
+        font-weight: 500;
+        letter-spacing: 0;
+        margin-bottom: 0.3rem;
     }
 
     .hero-subtitle {
-        color: #9ca3af !important;
-        font-size: 1rem;
+        color: #929b93 !important;
+        font-size: 0.9rem;
         margin: 0;
     }
 
@@ -86,26 +79,25 @@ st.markdown("""
        ======================================================== */
 
     .metric-card {
-        background: #11161d;
-        padding: 1.2rem;
-        border-radius: 17px;
-        border: 1px solid #26303d;
-        min-height: 105px;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+        background: #121513;
+        padding: 0.85rem 0.95rem;
+        border-radius: 6px;
+        border: 1px solid #29312c;
+        min-height: 78px;
     }
 
     .metric-label {
-        color: #8b95a5 !important;
+        color: #7f8b82 !important;
         font-size: 0.75rem;
         font-weight: 600;
         margin-bottom: 0.35rem;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.04em;
     }
 
     .metric-value {
-        color: #f9fafb !important;
-        font-size: 1.35rem;
-        font-weight: 700;
+        color: #e8ece5 !important;
+        font-size: 1.1rem;
+        font-weight: 600;
     }
 
 
@@ -114,11 +106,13 @@ st.markdown("""
        ======================================================== */
 
     .section-title {
-        color: #f9fafb !important;
-        font-size: 1.35rem;
-        font-weight: 700;
+        color: #e8ece5 !important;
+        font-size: 1.2rem;
+        font-weight: 600;
         margin-top: 1.5rem;
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.65rem;
+        border-left: 2px solid #b8d477;
+        padding-left: 0.65rem;
     }
 
 
@@ -127,11 +121,11 @@ st.markdown("""
        ======================================================== */
 
     .user-question {
-        background: #172033;
-        color: #f3f4f6 !important;
-        padding: 1rem 1.2rem;
-        border-radius: 15px;
-        border: 1px solid #293752;
+        background: #151916;
+        color: #e7ebe4 !important;
+        padding: 0.8rem 1rem;
+        border-radius: 6px;
+        border: 1px solid #303932;
         margin-top: 1rem;
         margin-bottom: 0.8rem;
     }
@@ -146,17 +140,16 @@ st.markdown("""
        ======================================================== */
 
     .answer-card {
-        background: #11161d;
-        color: #e5e7eb !important;
-        padding: 1.4rem 1.5rem;
-        border-radius: 18px;
-        border: 1px solid #26303d;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+        background: #111412;
+        color: #dce1da !important;
+        padding: 1rem 1.1rem;
+        border-radius: 6px;
+        border: 1px solid #2b332d;
         margin-bottom: 1rem;
     }
 
     .answer-label {
-        color: #9ca3af !important;
+        color: #8f9a90 !important;
         font-size: 0.75rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -170,20 +163,20 @@ st.markdown("""
        ======================================================== */
 
     .source-card {
-        background: #151b23;
-        padding: 1rem;
-        border-radius: 14px;
-        border: 1px solid #293341;
+        background: #151916;
+        padding: 0.85rem;
+        border-radius: 5px;
+        border: 1px solid #303932;
         margin-bottom: 0.8rem;
     }
 
     .source-title {
-        color: #f9fafb !important;
+        color: #e8ece5 !important;
         font-weight: 700;
     }
 
     .source-meta {
-        color: #9ca3af !important;
+        color: #929b93 !important;
         font-size: 0.88rem;
         margin-top: 0.3rem;
     }
@@ -194,12 +187,12 @@ st.markdown("""
        ======================================================== */
 
     [data-testid="stSidebar"] {
-        background: #0f141b !important;
-        border-right: 1px solid #252d38;
+        background: #111412 !important;
+        border-right: 1px solid #29312c;
     }
 
     [data-testid="stSidebar"] * {
-        color: #e5e7eb !important;
+        color: #c8cec7 !important;
     }
 
     [data-testid="stSidebar"] .stButton button {
@@ -212,8 +205,8 @@ st.markdown("""
        ======================================================== */
 
     [data-testid="stSidebar"] [data-testid="stAlert"] {
-        background: #172033 !important;
-        border: 1px solid #293752 !important;
+        background: #171b18 !important;
+        border: 1px solid #303932 !important;
     }
 
 
@@ -222,9 +215,9 @@ st.markdown("""
        ======================================================== */
 
     [data-testid="stFileUploader"] section {
-        background: #151b23 !important;
-        border: 1px dashed #3b4655 !important;
-        border-radius: 12px !important;
+        background: #151916 !important;
+        border: 1px dashed #465047 !important;
+        border-radius: 6px !important;
     }
 
     [data-testid="stFileUploader"] section * {
@@ -233,8 +226,8 @@ st.markdown("""
 
     [data-testid="stFileUploader"] button {
         color: #ffffff !important;
-        background: #1f2937 !important;
-        border: 1px solid #374151 !important;
+        background: #1e251f !important;
+        border: 1px solid #465047 !important;
     }
 
 
@@ -243,9 +236,10 @@ st.markdown("""
        ======================================================== */
 
     .stButton > button {
-        border-radius: 11px !important;
-        font-weight: 650 !important;
-        min-height: 2.6rem;
+        border-radius: 5px !important;
+        font-weight: 600 !important;
+        min-height: 2.4rem;
+        border: 1px solid #465047 !important;
     }
 
 
@@ -254,18 +248,18 @@ st.markdown("""
        ======================================================== */
 
     div[data-baseweb="input"] {
-        background: #11161d !important;
-        border-radius: 12px !important;
-        border: 1px solid #303a48 !important;
+        background: #111412 !important;
+        border-radius: 5px !important;
+        border: 1px solid #3a443c !important;
     }
 
     div[data-baseweb="input"] input {
-        color: #f9fafb !important;
+        color: #edf1eb !important;
         background: transparent !important;
     }
 
     div[data-baseweb="input"] input::placeholder {
-        color: #7c8797 !important;
+        color: #788379 !important;
     }
 
 
@@ -274,9 +268,9 @@ st.markdown("""
        ======================================================== */
 
     [data-testid="stExpander"] {
-        background: #11161d !important;
-        border: 1px solid #293341 !important;
-        border-radius: 14px !important;
+        background: #121513 !important;
+        border: 1px solid #303932 !important;
+        border-radius: 5px !important;
     }
 
     [data-testid="stExpander"] summary {
@@ -293,7 +287,7 @@ st.markdown("""
        ======================================================== */
 
     [data-testid="stCode"] {
-        border-radius: 10px !important;
+        border-radius: 5px !important;
     }
 
 
@@ -303,10 +297,29 @@ st.markdown("""
 
     .footer {
         text-align: center;
-        color: #6b7280 !important;
+        color: #69736b !important;
         font-size: 0.78rem;
-        padding-top: 2.5rem;
+        padding-top: 2rem;
         line-height: 1.7;
+    }
+
+    .eyebrow {
+        color: #b8d477;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 0.35rem;
+    }
+
+    .chat-label {
+        color: #8f9a90;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        margin-top: 1.1rem;
+        margin-bottom: 0.35rem;
     }
 
 
@@ -333,8 +346,9 @@ if "chat_history" not in st.session_state:
 st.markdown(
     """
 <div class="hero">
-<div class="hero-title">🍎 Apple Financial Intelligence</div>
-<p class="hero-subtitle">Enterprise RAG Assistant for grounded analysis of Apple financial reports</p>
+<div class="eyebrow">Research workspace</div>
+<div class="hero-title">Apple Financial Intelligence</div>
+<p class="hero-subtitle">Search Apple financial filings with grounded source attribution.</p>
 </div>
 """,
     unsafe_allow_html=True
@@ -350,7 +364,7 @@ col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.markdown("""
     <div class="metric-card">
-        <div class="metric-label">DOCUMENTS</div>
+        <div class="metric-label">Documents</div>
         <div class="metric-value">3 Apple Filings</div>
     </div>
     """, unsafe_allow_html=True)
@@ -359,7 +373,7 @@ with col1:
 with col2:
     st.markdown("""
     <div class="metric-card">
-        <div class="metric-label">KNOWLEDGE BASE</div>
+        <div class="metric-label">Pages indexed</div>
         <div class="metric-value">281 Pages</div>
     </div>
     """, unsafe_allow_html=True)
@@ -368,7 +382,7 @@ with col2:
 with col3:
     st.markdown("""
     <div class="metric-card">
-        <div class="metric-label">CHUNKS</div>
+        <div class="metric-label">Text chunks</div>
         <div class="metric-value">1,350</div>
     </div>
     """, unsafe_allow_html=True)
@@ -377,7 +391,7 @@ with col3:
 with col4:
     st.markdown("""
     <div class="metric-card">
-        <div class="metric-label">RETRIEVAL</div>
+        <div class="metric-label">Retrieval</div>
         <div class="metric-value">FAISS + Cosine</div>
     </div>
     """, unsafe_allow_html=True)
@@ -389,9 +403,9 @@ with col4:
 
 with st.sidebar:
 
-    st.header("⚙️ Controls")
+    st.header("Controls")
 
-    st.markdown("### 📚 Knowledge Base")
+    st.markdown("### Knowledge base")
 
     st.info(
         "Apple financial filings covering fiscal years "
@@ -412,7 +426,7 @@ with st.sidebar:
 
     st.divider()
 
-    st.markdown("### 📄 Add Document")
+    st.markdown("### Add document")
 
     uploaded_file = st.file_uploader(
         "Upload an Apple financial PDF",
@@ -431,12 +445,12 @@ with st.sidebar:
         )
 
         if st.button(
-            "📥 Add to Knowledge Base",
+            "Add to knowledge base",
             use_container_width=True,
             type="primary"
         ):
 
-            documents_folder = Path("data/documents")
+            documents_folder = Path(__file__).resolve().parent / "data" / "documents"
 
             documents_folder.mkdir(
                 parents=True,
@@ -481,7 +495,7 @@ with st.sidebar:
 
     st.divider()
 
-    st.markdown("### 🧹 Session")
+    st.markdown("### Session")
 
     if st.button(
         "Clear Conversation",
@@ -505,7 +519,7 @@ with st.sidebar:
 # ============================================================
 
 st.markdown(
-    '<div class="section-title">Ask the Financial Assistant</div>',
+    '<div class="section-title">Ask a question</div>',
     unsafe_allow_html=True
 )
 
@@ -523,7 +537,7 @@ ask_col, hint_col = st.columns([1, 5])
 with ask_col:
 
     ask_button = st.button(
-        "🔍 Ask AI",
+        "Ask",
         type="primary",
         use_container_width=True
     )
@@ -581,7 +595,7 @@ if ask_button:
 if st.session_state.chat_history:
 
     st.markdown(
-        '<div class="section-title">💬 Conversation</div>',
+        '<div class="section-title">Conversation</div>',
         unsafe_allow_html=True
     )
 
@@ -591,10 +605,10 @@ if st.session_state.chat_history:
         # USER QUESTION
         # ----------------------------------------------------
 
-        st.markdown("### 🧑 You")
-
+        st.markdown('<div class="chat-label">Question</div>', unsafe_allow_html=True)
         st.markdown(
-            f"> {chat['question']}"
+            f'<div class="user-question">{html.escape(chat["question"])}</div>',
+            unsafe_allow_html=True
         )
 
 
@@ -602,11 +616,12 @@ if st.session_state.chat_history:
         # AI ANSWER
         # ----------------------------------------------------
 
-        st.markdown("### 🤖 AI Answer")
-
+        st.markdown('<div class="chat-label">Answer</div>', unsafe_allow_html=True)
+        st.markdown('<div class="answer-card">', unsafe_allow_html=True)
         st.markdown(
             chat["answer"]
         )
+        st.markdown('</div>', unsafe_allow_html=True)
 
 
         # ----------------------------------------------------
@@ -616,7 +631,7 @@ if st.session_state.chat_history:
         if chat["sources"]:
 
             with st.expander(
-                f"📚 View Sources & Retrieved Evidence "
+                f"Sources and retrieved evidence "
                 f"({len(chat['sources'])} chunks)"
             ):
 

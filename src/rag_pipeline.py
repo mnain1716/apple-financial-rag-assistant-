@@ -2,13 +2,32 @@ from dotenv import load_dotenv
 from google import genai
 import os
 import re
+import streamlit as st
 from src.retriever import load_vector_store, search
 
 load_dotenv()
 
 
-# Gemini client
-client = genai.Client()
+def _get_setting(name):
+    value = os.getenv(name)
+    if value:
+        return value
+
+    try:
+        return st.secrets.get(name)
+    except (FileNotFoundError, KeyError):
+        return None
+
+
+api_key = _get_setting("GEMINI_API_KEY")
+if not api_key:
+    raise RuntimeError(
+        "GEMINI_API_KEY is not configured. Add it to .env locally or "
+        "Streamlit Cloud Secrets when deployed."
+    )
+
+client = genai.Client(api_key=api_key)
+model_name = _get_setting("GEMINI_MODEL") or "gemini-3.6-flash"
 
 
 # Load FAISS vector store
@@ -77,7 +96,7 @@ ANSWER:
 """
 
     response = client.models.generate_content(
-        model="gemini-3.7-flash",
+        model=model_name,
         contents=prompt
     )
 

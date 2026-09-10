@@ -1,20 +1,22 @@
 import faiss
 import pickle
 import numpy as np
+from pathlib import Path
 from sentence_transformers import SentenceTransformer
 
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 
 def load_vector_store():
 
     index = faiss.read_index(
-        "vectorstore/faiss.index"
+        str(PROJECT_ROOT / "vectorstore" / "faiss.index")
     )
 
     with open(
-        "vectorstore/chunks.pkl",
+        PROJECT_ROOT / "vectorstore" / "chunks.pkl",
         "rb"
     ) as file:
 
