@@ -3,7 +3,6 @@ from pathlib import Path
 import html
 
 from src.rag_pipeline import generate_answer
-from src.indexer import rebuild_index
 
 
 # ============================================================
@@ -449,6 +448,8 @@ with st.sidebar:
             use_container_width=True,
             type="primary"
         ):
+
+            from src.indexer import rebuild_index
 
             documents_folder = Path(__file__).resolve().parent / "data" / "documents"
 
