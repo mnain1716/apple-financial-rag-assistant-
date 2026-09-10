@@ -1,3 +1,5 @@
+import os
+
 import gradio as gr
 
 from src.rag_pipeline import generate_answer
@@ -42,4 +44,7 @@ with gr.Blocks(title="Apple Financial Intelligence", theme=gr.themes.Base()) as 
 
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=None)
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=int(os.getenv("PORT", "7860")),
+    )
