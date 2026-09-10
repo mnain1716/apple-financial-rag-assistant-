@@ -145,3 +145,21 @@ The committed `vectorstore/faiss.index` and `vectorstore/chunks.pkl` files are r
 Uploaded PDFs and rebuilt indexes use temporary deployment storage and are not persistent across restarts.
 
 If an API key was ever exposed outside `.env`, revoke it in Google AI Studio and create a replacement before deployment.
+
+## Alternative Gradio Deployment
+
+For a lighter web interface, deploy the Gradio entrypoint instead of Streamlit.
+
+Use the same repository and environment variables, but set the Render start command to:
+
+```bash
+python gradio_app.py
+```
+
+The build command remains:
+
+```bash
+pip install -r requirements.txt
+```
+
+Gradio uses the same Gemini, FAISS, documents, and retrieval pipeline. Set the Render service type to **Web Service**, add `GEMINI_API_KEY` and `GEMINI_MODEL`, and open the public Render URL after deployment.

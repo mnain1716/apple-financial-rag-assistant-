@@ -2,7 +2,6 @@ from dotenv import load_dotenv
 from google import genai
 import os
 import re
-import streamlit as st
 from src.retriever import load_vector_store, search
 
 load_dotenv()
@@ -14,8 +13,9 @@ def _get_setting(name):
         return value
 
     try:
+        import streamlit as st
         return st.secrets.get(name)
-    except (FileNotFoundError, KeyError):
+    except (FileNotFoundError, KeyError, ImportError):
         return None
 
 
